@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/dosa_boi/ews'
+let g:netrw_dirhist_1='/home/dosa_boi/ews/Lab13'
+let g:netrw_dirhist_0='/home/dosa_boi/Input-Font'
+let g:netrw_dirhist_9='/home/dosa_boi/ews/Lab9'
+let g:netrw_dirhist_8='/home/dosa_boi/ews'
+let g:netrw_dirhist_7='/home/dosa_boi/.config/configstore'
+let g:netrw_dirhist_6='/home/dosa_boi/.config/termite'
+let g:netrw_dirhist_5='/home/dosa_boi/notes/classes/astro/210'
+let g:netrw_dirhist_4='/home/dosa_boi/notes/classes/astro'
+let g:netrw_dirhist_3='/home/dosa_boi/notes/classes'
