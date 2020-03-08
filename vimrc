@@ -9,6 +9,15 @@ let g:sleuth_automatic = 0
 set background=dark
 colorscheme dracula
 
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+
 set tabstop=8
 set shiftwidth=8
 
@@ -23,6 +32,9 @@ set incsearch
 set hlsearch
 set scrolloff=12
 set ttyfast
+set showcmd
+set wildmenu
+set wildmode=list:longest
 
 set wrap
 set textwidth=80
@@ -48,9 +60,10 @@ nnoremap <leader>] o<esc>k
 nnoremap <leader>v V` ]
 map <silent> <Space> :noh<cr>
 map <C-\> :vsp split<CR>:exec("tag ".expand("<cword>"))<CR>
-cmap w!! w !sudo tee %
-cmap hex %!xxd
-cmap uhex %!xxd -r
+cmap sw w !sudo tee %
+cmap Hex %!xxd
+cmap Uhex %!xxd -r
+cmap jj <ESC>
 set pastetoggle=<F2>
 
 let g:netrw_liststyle = 3
