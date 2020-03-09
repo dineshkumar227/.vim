@@ -35,6 +35,7 @@ set ttyfast
 set showcmd
 set wildmenu
 set wildmode=list:longest
+set directory=~/.vim/swapfiles//
 
 set wrap
 set textwidth=80
