@@ -35,7 +35,7 @@ set ttyfast
 set showcmd
 set wildmenu
 set wildmode=list:longest
-set directory=~/.vim/swapfiles//
+set directory=~/.vim/swapfiles/
 
 set wrap
 set textwidth=80
@@ -61,7 +61,7 @@ nnoremap <leader>] o<esc>k
 nnoremap <leader>v V` ]
 map <silent> <Space> :noh<cr>
 map <C-\> :vsp split<CR>:exec("tag ".expand("<cword>"))<CR>
-cmap sw w !sudo tee %
+cmap w!! w !sudo tee %
 cmap Hex %!xxd
 cmap Uhex %!xxd -r
 cmap jj <ESC>
