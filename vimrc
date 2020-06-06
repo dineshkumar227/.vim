@@ -1,11 +1,9 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
-Plug 'lifepillar/vim-solarized8'
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
-let g:sleuth_automatic = 0
 set background=dark
 colorscheme dracula
 
@@ -13,10 +11,6 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
 
 set tabstop=8
 set shiftwidth=8
@@ -34,12 +28,11 @@ set scrolloff=12
 set ttyfast
 set showcmd
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:longest:full,full
 
-set wrap
 set textwidth=80
 set colorcolumn=100
-set formatoptions=crqnl
+set formatoptions=crqnl1j
 
 let mapleader = ","
 nnoremap <tab> %
@@ -60,7 +53,7 @@ nnoremap <leader>] o<esc>k
 nnoremap <leader>v V` ]
 map <silent> <Space> :noh<cr>
 map <C-\> :vsp split<CR>:exec("tag ".expand("<cword>"))<CR>
-cmap sw w !sudo tee %
+cmap w!! w !sudo tee %
 cmap Hex %!xxd
 cmap Uhex %!xxd -r
 cmap jj <ESC>
@@ -72,22 +65,5 @@ let g:netrw_winsize = 25
 
 :set statusline=%<%f%=\ [%1*%M%*%n%R%H]\ %-19(%3l,%02c%03V%)%O'%02b'
 :hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
-
-" Check .git/tags for ctags file.
-fun! FindTagsFileInGitDir(file)
-  let path = fnamemodify(a:file, ':p:h')
-  while path != '/'
-    let fname = path . '/.git/tags'
-    if filereadable(fname)
-      silent! exec 'set tags+=' . fname
-    endif
-    let path = fnamemodify(path, ':h')
-  endwhile
-endfun
-
-augroup CtagsGroup
-  autocmd!
-  autocmd BufRead * call FindTagsFileInGitDir(expand("<afile>"))
-augroup END
 
 autocmd BufEnter * silent! lcd %:p:h

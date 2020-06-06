@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/dosa_boi/.vim'
+let g:netrw_dirhist_1='/home/dosa_boi/code/blog/themes/hugo-coder/assets/scss'
+let g:netrw_dirhist_0='/home/dosa_boi/code/blog/themes/hugo-coder/assets'
 let g:netrw_dirhist_9='/home/dosa_boi'
 let g:netrw_dirhist_8='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/react_website/src/components/App'
 let g:netrw_dirhist_7='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/react_website/src/components'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_6='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/react_
 let g:netrw_dirhist_5='/home/dosa_boi/code/Work/PrecAgriWeb'
 let g:netrw_dirhist_4='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/react_website/public'
 let g:netrw_dirhist_3='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/react_website'
-let g:netrw_dirhist_2='/home/dosa_boi/code/Work/PrecAgriWeb'
-let g:netrw_dirhist_1='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/node_backend/node_modules'
-let g:netrw_dirhist_0='/home/dosa_boi/code/Work/PrecAgriWeb/prec-agri-web/node_backend/src'
