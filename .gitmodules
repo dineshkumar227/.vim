@@ -4,9 +4,6 @@
 [submodule "plugged/vim-sleuth"]
 	path = plugged/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule "plugged/vim-solarized8"]
-	path = plugged/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8
 [submodule "plugged/dracula"]
 	path = plugged/dracula
 	url = https://github.com/dracula/vim
