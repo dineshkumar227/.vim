@@ -2,9 +2,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'xavierd/clang_complete',
 call plug#end()
 
-set background=dark
 colorscheme dracula
 
 nnoremap <left> <nop>
@@ -18,14 +18,13 @@ set shiftwidth=8
 set number relativenumber
 syntax on
 set mouse=a
+set ttyfast
 filetype plugin indent on
 set autoindent
-set termguicolors
 set laststatus=2
 set incsearch
 set hlsearch
 set scrolloff=12
-set ttyfast
 set showcmd
 set wildmenu
 set wildmode=list:longest:full,full
@@ -48,12 +47,18 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap j gj
 nnoremap k gk
+"split and automatic move - Dinesh"
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>[ O<esc>j
 nnoremap <leader>] o<esc>k
 nnoremap <leader>v V` ]
+"Copy for competitive programming - Ajay"
+nnoremap <leader><leader>y gg"+yG
+nnoremap <leader>y "+y
+nnoremap <leader>yy "+yy
+vnoremap <leader>y "+y
 map <silent> <Space> :noh<cr>
-map <C-\> :vsp split<CR>:exec("tag ".expand("<cword>"))<CR>
+"Help poor children in Uganda - Chinmay"
 cmap w!! w !sudo tee %
 cmap Hex %!xxd
 cmap Uhex %!xxd -r
@@ -68,3 +73,4 @@ let g:netrw_winsize = 25
 :hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 
 autocmd BufEnter * silent! lcd %:p:h
+let g:clang_library_path='/usr/lib64/libclang.so'
