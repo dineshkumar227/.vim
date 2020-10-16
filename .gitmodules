@@ -7,3 +7,6 @@
 [submodule "plugged/dracula"]
 	path = plugged/dracula
 	url = https://github.com/dracula/vim
+[submodule "plugged/clang_complete"]
+	path = plugged/clang_complete
+	url = https://github.com/xavierd/clang_complete
