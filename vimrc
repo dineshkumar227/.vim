@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete',
