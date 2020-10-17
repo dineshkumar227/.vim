@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete',
+Plug 'lervag/vimtex'
 call plug#end()
 
 colorscheme dracula
@@ -73,3 +74,5 @@ let g:netrw_winsize = 25
 
 autocmd BufEnter * silent! lcd %:p:h
 let g:clang_library_path='/usr/lib64/libclang.so'
+let g:tex_flavor='latex'
+let g:vimtex_compiler_method='latexmk'
