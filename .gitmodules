@@ -10,3 +10,6 @@
 [submodule "plugged/clang_complete"]
 	path = plugged/clang_complete
 	url = https://github.com/xavierd/clang_complete
+[submodule "plugged/vimtex"]
+	path = plugged/vimtex
+	url = https://github.com/lervag/vimtex
