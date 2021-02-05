@@ -1,15 +1,3 @@
-[submodule "plugged/vim-polyglot"]
-	path = plugged/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
 [submodule "plugged/vim-sleuth"]
 	path = plugged/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule "plugged/dracula"]
-	path = plugged/dracula
-	url = https://github.com/dracula/vim
-[submodule "plugged/clang_complete"]
-	path = plugged/clang_complete
-	url = https://github.com/xavierd/clang_complete
-[submodule "plugged/vimtex"]
-	path = plugged/vimtex
-	url = https://github.com/lervag/vimtex
